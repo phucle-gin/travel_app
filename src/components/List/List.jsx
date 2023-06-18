@@ -19,7 +19,7 @@ const List = ({ places, type, setType, rating, setRating, childClicked, isLoadin
       <Typography variant="h4">Food & Dining around you</Typography>
       {isLoading ? (
         <div className={classes.loading}>
-          <CircularProgress size="5rem" />
+          <CircularProgress size="5rem" style={{ color: '#7286D3' }}/>
         </div>
       ) : (
         <>

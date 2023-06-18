@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { CssBaseline, Grid } from '@material-ui/core';
-
 import { getPlacesData } from './api/index';
 import Header from './components/Header/Header';
 import List from './components/List/List';
@@ -53,14 +52,13 @@ const App = () => {
   const onPlaceChanged = () => {
     const lat = autocomplete.getPlace().geometry.location.lat();
     const lng = autocomplete.getPlace().geometry.location.lng();
-
     setCoords({ lat, lng });
   };
 
   return (
     <>
       <CssBaseline />
-      <Header onPlaceChanged={onPlaceChanged} onLoad={onLoad} apikey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} />
+      <Header onPlaceChanged={onPlaceChanged} onLoad={onLoad} />
       <Grid container spacing={3} style={{ width: '100%' }}>
         <Grid item xs={12} md={4}>
           <List

@@ -8,7 +8,7 @@ export default makeStyles((theme) => ({
     marginTop: theme.spacing(2),
   },
   loading: {
-    height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center',
+    height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center', 
   },
   container: {
     padding: '25px',
